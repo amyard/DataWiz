@@ -1,54 +1,45 @@
-{% extends 'base.html' %}
 {% load widget_tweaks %}
 
+<form method="post" action="">
+  {% csrf_token %}
 
+  <div class="modal-header">
+    <h3 class="modal-title">Регистрация пользователя:</h3>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 
-{% block title %}
-    Регистрация - {{ block.super }}
-{% endblock %}
+  <div class="modal-body">
 
+    <div class="{% if form.non_field_errors %}invalid{% endif %} mb-2">
+      {% for error in form.non_field_errors %}
+        <div class="alert alert-danger mt-2">
+            <strong>{{ error|escape }}</strong>
+        </div>
+      {% endfor %}
+    </div>
 
-{% block content %}
-
-<div class="container login-page">
-	<h3 class = 'text-center mt-3'>Регистрация пользователя:</h3>
-	<hr>
-		<form class="form-signin" action = '' method="POST">
-				{% csrf_token %}
-
-                <div class="{% if form.non_field_errors %}invalid{% endif %} mb-2">
-                  {% for error in form.non_field_errors %}
-                    <div class="alert alert-danger mt-2">
-                        <strong>{{ error|escape }}</strong>
-                    </div>
-                  {% endfor %}
+    {% for field in form %}
+      <div class="form-group">
+        <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+        {% render_field field class="form-control" placeholder=field.label %}
+        <div class="{% if field.errors %} invalid{% endif %}">
+          {% for error in field.errors %}
+            <p class="help-block">
+                <div class="alert alert-danger mt-2">
+                    <strong>{{ error }}</strong>
                 </div>
+            </p>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 
-                {% for field in form %}
-                  <div class="form-group">
-                    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
-                    {% render_field field class="form-control" %}
-                    <div class="{% if field.errors %} invalid{% endif %}">
-                      {% for error in field.errors %}
-                        <p class="help-block">
-                            <div class="alert alert-danger mt-2">
-                                <strong>{{ error }}</strong>
-                            </div>
-                        </p>
-                      {% endfor %}
-                    </div>
-                  </div>
-                {% endfor %}
+  <div class="modal-footer">
+    <button type="button" class="submit-btn btn btn-primary" formnovalidate="formnovalidate">Зарегистрировать</button>
+    <a href="{% url 'base-view' %}" id="cancel" name="cancel" class="btn btn-danger mt-3 mb-3">Отмена</a>
+  </div>
 
-            <input class="btn btn-primary pl-4 pr-4 mt-3 mb-3" type="submit" value="Зарегистрировать">
-            <a href="{% url 'base-view' %}" id="cancel" name="cancel" class="btn btn-danger mt-3 mb-3">Отмена</a>
-
-            <br>
-            <small class = 'text-muted ml-2'>
-                У Вас уже есть аккаунт? Можете <a href="{% url 'login' %}">ЗАЙТИ.</a>
-            </small>
-
-		</form>
-</div>
-
-{% endblock %}
+</form>

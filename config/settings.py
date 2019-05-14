@@ -46,6 +46,8 @@ LOCAL_APPS = [
 
 THIRD_PARTY_APPS = [
     'widget_tweaks',
+    'bootstrap_modal_forms',
+    'crispy_forms',
 ]
 
 
@@ -145,3 +147,6 @@ MEDIA_URL = '/media/'
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'

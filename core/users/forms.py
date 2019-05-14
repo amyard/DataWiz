@@ -1,17 +1,22 @@
 from django import forms
-from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import get_user_model
 from django.core.validators import validate_email
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+
+from bootstrap_modal_forms.mixins import PopRequestMixin, CreateUpdateAjaxMixin
 
 
 User = get_user_model()
 
 
 
-class LoginForm(forms.Form):
+class CustomAuthenticationForm(AuthenticationForm):
     username = forms.CharField(label='Пользователь', widget=forms.TextInput())
     password = forms.CharField(label='Пароль', widget=forms.PasswordInput())
 
+    class Meta:
+        model = User
+        fields = ['username', 'password']
 
     def clean_username(self):
         username = self.cleaned_data['username']
@@ -31,12 +36,12 @@ class LoginForm(forms.Form):
         return password
 
 
-class RegistrationForm(UserCreationForm):
+
+class CustomUserCreationForm(PopRequestMixin, CreateUpdateAjaxMixin, UserCreationForm):
     username = forms.CharField(label='Пользователь', widget=forms.TextInput())
     email = forms.CharField(label='Електронная почта', widget=forms.EmailInput())
     password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput())
-    password2 = forms.CharField(label='Повторить пароль',widget=forms.PasswordInput())
-
+    password2 = forms.CharField(label='Повторить пароль', widget=forms.PasswordInput())
 
     class Meta:
         model = User
@@ -73,14 +78,14 @@ class RegistrationForm(UserCreationForm):
             mt = validate_email(email)
         except:
             raise forms.ValidationError('Incorrect email.')
-
         return email
 
-    def save(self, commit=True):
-        # Save the provided password in hashed format
-        user = super(RegistrationForm, self).save(commit=False)
-        user.set_password(self.cleaned_data["password1"])
-        user.pass_for_api = self.cleaned_data["password1"]
-        if commit:
-            user.save()
-        return user
+
+    # def save(self, commit=True):
+    #     # Save the provided password in hashed format
+    #     user = super(CustomUserCreationForm, self).save(commit=False)
+    #     user.set_password(self.cleaned_data["password1"])
+    #     user.pass_for_api = self.cleaned_data["password1"]
+    #     if commit:
+    #         user.save()
+    #     return user

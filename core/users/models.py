@@ -35,6 +35,7 @@ class User(AbstractBaseUser):
 				)
 	email = models.EmailField(max_length=255, unique=True)
 	pass_for_api = models.CharField(max_length=255, blank=True)
+
 	is_admin = models.BooleanField(default=False)
 	is_staff = models.BooleanField(default=False)
 
