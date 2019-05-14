@@ -1,8 +1,109 @@
 {% extends 'base.html' %}
+{% load widget_tweaks %}
+
 
 
 {% block content %}
 
-    <h1>{{test}}</h1>
+<!--   HERE IS FORM   -->
+        <div class="ml-5 mt-3 left-sidebar">
+            <form action="" method="POST" class="form-group">
+				<h3 class="text-center">Выберите даты:</h3>
+				<hr>
+
+				{% csrf_token %}
+
+                {% if form.errors %}
+				    {% for field in form %}
+				        {% for error in field.errors %}
+				            <div class="alert alert-danger">
+				                <strong>{{ error|escape }}</strong>
+				            </div>
+				        {% endfor %}
+				    {% endfor %}
+				    {% for error in form.non_field_errors %}
+				        <div class="alert alert-danger">
+				            <strong>{{ error|escape }}</strong>
+				        </div>
+				    {% endfor %}
+                {% endif %}
+
+                {% for field in form %}
+				  <div class="form-group">
+					<label for="{{ field.id_for_label }}">{{ field.label }}</label>
+					{% render_field field class="form-control" placeholder=field.label %}
+				  </div>
+				{% endfor %}
+
+                <button class = 'btn btn-primary' type = 'Submit'>Поиск</button>
+                <a href="" id="cancel" name="cancel" class="btn btn-danger">Отмена</a>
+            </form>
+        </div>
+
+
+<!--   HERE WILL BE CONTENT   -->
+    <div class="mt-3 mr-5 right-sidebar">
+		{% if dates %}
+			<h1 class="text-center"><b>Статистика</b></h1>
+			<hr>
+
+			<div id="exTab2">
+				<ul class="nav nav-tabs">
+					{% for date in dates %}
+						{% if forloop.first %}
+							<li class ='mb-2'><a  href="#{{ forloop.counter }}" data-toggle="tab" class="active">{{ date }}</a></li>
+						{% else %}
+							<li class ='mb-2'><a  href="#{{ forloop.counter }}" data-toggle="tab">{{ date }}</a></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+
+				<div class="tab-content ">
+					{% for date in dates %}
+					{% if forloop.first %}
+						<div class="tab-pane active" id="{{ forloop.counter }}">
+					{% else %}
+						<div class="tab-pane" id="{{ forloop.counter }}">
+					{% endif %}
+
+							<!-- Nav tabs -->
+					  <ul class="nav nav-tabs mt-3">
+						<li class="nav-item">
+						  <a class="nav-link active" data-toggle="tab" href="#table1">Home</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" data-toggle="tab" href="#table2">Menu 1</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" data-toggle="tab" href="#table3">Menu 2</a>
+						</li>
+					  </ul>
+
+					  <!-- Tab panes -->
+					  <div class="tab-content inner-tabs">
+						<div id="table1" class="container tab-pane active"><br>
+						  <h3>HOME</h3>
+						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div id="table2" class="container tab-pane fade"><br>
+						  <h3>Menu 1</h3>
+						  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div id="table3" class="container tab-pane fade"><br>
+						  <h3>Menu 2</h3>
+						  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						</div>
+					  </div>
+
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		{% else %}
+			<h1 class="text-center"><i class="fas fa-arrow-left mr-3"></i>Выберите даты для отображение статистики</h1>
+		{% endif %}
+    </div>
+
+
 
 {% endblock %}

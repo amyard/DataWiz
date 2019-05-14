@@ -1,6 +1,6 @@
 from django.urls import path
-from core.implement import views
+from core.implement.views import MainPageView
 
 urlpatterns = [
-    path('', views.index, name='base-view'),
+    path('', MainPageView.as_view(), name='base-view'),
 ]
