@@ -26,12 +26,10 @@ class MainPageView(View):
 
             dates= [start_date + datetime.timedelta(n) for n in range(int((end_date - start_date).days)+1)]
 
-            if self.request.user.is_authenticated:
+            if not self.request.user.username == '':
                 general_df, grow_df, drop_df = mainscript(start_date, log=self.request.user.email, pas=self.request.user.pass_for_api)
             else:
                 general_df, grow_df, drop_df = mainscript(start_date)
-
-            print(self.request.user.pass_for_api)
 
             context = {
                 'form': self.form(request.POST or None),
@@ -54,9 +52,8 @@ class CurrDateTableView(View):
         curr_date = '-'.join([curr_date.split('-')[2], curr_date.split('-')[1], curr_date.split('-')[0]])
         curr_date = datetime.datetime.strptime(curr_date, '%Y-%m-%d').date()
 
-        if self.request.user.is_authenticated:
-            general_df, grow_df, drop_df = mainscript(curr_date, log=self.request.user.email,
-                                                      pas=self.request.user.pass_for_api)
+        if not self.request.user.username == '':
+            general_df, grow_df, drop_df = mainscript(curr_date, log=self.request.user.email,pas=self.request.user.pass_for_api)
         else:
             general_df, grow_df, drop_df = mainscript(curr_date)
 
