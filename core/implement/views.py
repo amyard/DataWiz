@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import View
+from django.http import JsonResponse
 
 from core.implement.forms import SearchDateForm
 from core.utils.mainscript import mainscript
@@ -28,7 +29,7 @@ class MainPageView(View):
             general_df, grow_df, drop_df = mainscript(start_date)
 
             context = {
-                'form': self.form(request.POST or None),
+                'form': self.form,
                 'dates': dates,
                 'general_df':general_df, 'grow_df':grow_df, 'drop_df':drop_df
             }
@@ -38,3 +39,18 @@ class MainPageView(View):
         }
         return render(self.request, self.template_name, context)
 
+
+class CurrDateTableView(View):
+    def get(self, request, *args, **kwargs):
+        curr_date = self.request.GET.get('curr_date')
+        curr_date = '-'.join([curr_date.split('-')[2], curr_date.split('-')[0], curr_date.split('-')[1]])
+        curr_date = datetime.datetime.strptime(curr_date, '%Y-%m-%d').date()
+
+        general_df, grow_df, drop_df = mainscript(curr_date)
+
+        data = {
+            'general_df':general_df,
+            'grow_df':grow_df,
+            'drop_df':drop_df
+        }
+        return JsonResponse(data)

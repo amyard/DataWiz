@@ -51,9 +51,9 @@
 				<ul class="nav nav-tabs">
 					{% for date in dates %}
 						{% if forloop.first %}
-							<li class ='mb-2'><a  href="#{{ forloop.counter }}" data-toggle="tab" class="active">{{ date|date:"m-d-Y" }}</a></li>
+							<li class ='mb-2 date-li'><a  href="#{{ forloop.counter }}" data-toggle="tab" class="active">{{ date|date:"m-d-Y" }}</a></li>
 						{% else %}
-							<li class ='mb-2'><a  href="#{{ forloop.counter }}" data-toggle="tab">{{ date|date:"m-d-Y" }}</a></li>
+							<li class ='mb-2 date-li'><a  href="#{{ forloop.counter }}" data-toggle="tab">{{ date|date:"m-d-Y" }}</a></li>
 						{% endif %}
 					{% endfor %}
 				</ul>
@@ -67,20 +67,20 @@
 					{% endif %}
 
 							<!-- Nav tabs -->
-					  <ul class="nav nav-tabs mt-3">
-						<li class="nav-item">
+					  <ul class="nav nav-tabs mt-3 inner-nav-tabs">
+						<li class="nav-item tab1">
 						  <a class="nav-link active" data-toggle="tab" href="#table1">Статистика</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item tab2">
 						  <a class="nav-link" data-toggle="tab" href="#table2">Товари,​​ які ​​виросли в ​​продажах</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item tab3">
 						  <a class="nav-link" data-toggle="tab" href="#table3">Товари,​​ які впали в ​​продажах</a>
 						</li>
 					  </ul>
 
 					  <!-- Tab panes -->
-					  <div class="tab-content inner-tabs">
+					  <div class="tab-content inner-tab-panes">
 						<div id="table1" class="container tab-pane active"><br>
 						  {{ general_df|safe }}
 						</div>

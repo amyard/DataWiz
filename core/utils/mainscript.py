@@ -21,7 +21,6 @@ def mainscript(start_date, log = 'test1@mail.com', pas = '1qaz'):
     date_to = start_date
     date_from = start_date - datetime.timedelta(days=1)
 
-
     ##  TABLE BY CATEGORY
 
     df = dw.get_categories_sale(date_from=date_from, date_to=date_to, by=['turnover', 'qty', 'receipts_qty'], view_type='raw')
