@@ -89,3 +89,18 @@ body .nav-tabs .active {
 #exTab2 .nav-tabs li a:hover {
     text-decoration: none;
 }
+
+
+/*   TABLES   */
+
+body .df-tables thead {
+    background: #9FCDFF;
+}
+
+body .df-tables thead tr th {
+    text-align: center;
+}
+
+body .df-tables tbody tr:hover {
+    background: #9FCDFF;
+}

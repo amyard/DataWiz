@@ -51,9 +51,9 @@
 				<ul class="nav nav-tabs">
 					{% for date in dates %}
 						{% if forloop.first %}
-							<li class ='mb-2'><a  href="#{{ forloop.counter }}" data-toggle="tab" class="active">{{ date }}</a></li>
+							<li class ='mb-2'><a  href="#{{ forloop.counter }}" data-toggle="tab" class="active">{{ date|date:"m-d-Y" }}</a></li>
 						{% else %}
-							<li class ='mb-2'><a  href="#{{ forloop.counter }}" data-toggle="tab">{{ date }}</a></li>
+							<li class ='mb-2'><a  href="#{{ forloop.counter }}" data-toggle="tab">{{ date|date:"m-d-Y" }}</a></li>
 						{% endif %}
 					{% endfor %}
 				</ul>
@@ -82,16 +82,13 @@
 					  <!-- Tab panes -->
 					  <div class="tab-content inner-tabs">
 						<div id="table1" class="container tab-pane active"><br>
-						  <h3>HOME</h3>
-						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						  {{ general_df|safe }}
 						</div>
 						<div id="table2" class="container tab-pane fade"><br>
-						  <h3>Menu 1</h3>
-						  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						  {{ grow_df|safe }}
 						</div>
 						<div id="table3" class="container tab-pane fade"><br>
-						  <h3>Menu 2</h3>
-						  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+						  {{ drop_df|safe }}
 						</div>
 					  </div>
 

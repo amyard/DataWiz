@@ -1,15 +1,22 @@
-from core.utils.rest.dwapi import datawiz
+from rest.dwapi import datawiz
 
 import datetime
+# from datetime import date, timedelta, datetime
 import pandas as pd
 import numpy as np
+import warnings
 
 pd.options.display.float_format = '{:.2f}'.format
 
 
 
+# log = 'test1@mail.com'
+# pas = '1qaz'
+#
+# start_date = datetime.date(2019, 5, 2)
 
-def mainscript(start_date, log = 'test1@mail.com', pas = '1qaz'):
+
+def main(start_date, log = 'test1@mail.com', pas = '1qaz'):
 
     dw = datawiz.DW(API_KEY=log, API_SECRET=pas)
 
@@ -36,7 +43,7 @@ def mainscript(start_date, log = 'test1@mail.com', pas = '1qaz'):
     df_cat['Різниця в %'] = ((df_cat.iloc[:,-2] - df_cat.iloc[:,-1]) / df_cat.iloc[:, -1]).mul(100).round(2)
     df_cat['Різниця'] = df_cat.iloc[:,-2] - df_cat.iloc[:,-1]
 
-    df_cat = df_cat.to_html(classes="table table-bordered df-tables")
+    df_cat = df_cat.to_html(classes="table table-bordered table-hover")
 
 
     ## PRODUCTS TRANDES
@@ -62,7 +69,11 @@ def mainscript(start_date, log = 'test1@mail.com', pas = '1qaz'):
     positive = merged[merged['Зміна обороту'] > 0].sort_values('Зміна обороту', ascending=False).reset_index(drop=True)
     negative = merged[merged['Зміна обороту'] < 0].sort_values('Зміна обороту', ascending=True).reset_index(drop=True)
 
-    positive = positive.to_html(classes="table table-bordered df-tables")
-    negative = negative.to_html(classes="table table-bordered df-tables")
+    positive = positive.to_html(classes="table table-bordered table-hover")
+    negative = negative.to_html(classes="table table-bordered table-hover")
 
     return df_cat, positive, negative
+
+if __name__ == '__main__':
+    start_date = datetime.date(2015, 11, 18)
+    main(start_date)

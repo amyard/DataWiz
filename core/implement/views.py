@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.generic import View
 
 from core.implement.forms import SearchDateForm
-
+from core.utils.mainscript import mainscript
 import datetime
 
 
@@ -14,9 +14,9 @@ class MainPageView(View):
     def get(self, request, *args, **kwargs):
         context = {
             'form':self.form,
-            # 'dates': [datetime.date(2019, 5, 1), datetime.date(2019, 5, 2), datetime.date(2019, 5, 3), datetime.date(2019, 5, 4)]
         }
         return render(self.request, self.template_name, context)
+
 
     def post(self, request, *args, **kwargs):
         form = self.form(request.POST or None)
@@ -25,10 +25,12 @@ class MainPageView(View):
             end_date = form.cleaned_data['end_date']
 
             dates= [start_date + datetime.timedelta(n) for n in range(int((end_date - start_date).days)+1)]
+            general_df, grow_df, drop_df = mainscript(start_date)
 
             context = {
-                'form': self.form,
-                'dates': dates
+                'form': self.form(request.POST or None),
+                'dates': dates,
+                'general_df':general_df, 'grow_df':grow_df, 'drop_df':drop_df
             }
             return render(self.request, self.template_name, context)
         context = {
