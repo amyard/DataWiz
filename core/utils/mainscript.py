@@ -32,10 +32,8 @@ def mainscript(start_date, log = 'test1@mail.com', pas = '1qaz'):
     new_df.rename(columns={'turnover': 'Оборот', 'qty': 'Кількість товарів', 'receipts_qty': 'Кількість чеків'}, inplace=True)
 
     df_cat = new_df[['Оборот', 'Кількість товарів', 'Кількість чеків', 'Середній чек']].sort_index(ascending=0).T
-    df_cat['Різниця в %'] = ((df_cat.iloc[:,-2] - df_cat.iloc[:,-1]) / df_cat.iloc[:, -1]).mul(100).round(2)
-    df_cat['Різниця'] = df_cat.iloc[:,-2] - df_cat.iloc[:,-1]
-
-    df_cat = df_cat.to_html(classes="table table-bordered df-tables")
+    df_cat['Різниця в %'] = ((df_cat.loc[:,clean_date(str(date_to))] - df_cat.loc[:,clean_date(str(date_from))]) / df_cat.loc[:,clean_date(str(date_from))]).mul(100).round(2)
+    df_cat['Різниця'] = df_cat.loc[:,clean_date(str(date_to))] - df_cat.loc[:,clean_date(str(date_from))]
 
 
     ## PRODUCTS TRANDES
@@ -61,7 +59,11 @@ def mainscript(start_date, log = 'test1@mail.com', pas = '1qaz'):
     positive = merged[merged['Зміна обороту'] > 0].sort_values('Зміна обороту', ascending=False).reset_index(drop=True)
     negative = merged[merged['Зміна обороту'] < 0].sort_values('Зміна обороту', ascending=True).reset_index(drop=True)
 
+
+    # CONVER DATA AND RETURN
+    df_cat = df_cat.to_html(classes="table table-bordered df-tables")
     positive = positive.to_html(classes="table table-bordered df-tables")
     negative = negative.to_html(classes="table table-bordered df-tables")
+
 
     return df_cat, positive, negative

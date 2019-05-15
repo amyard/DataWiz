@@ -6,7 +6,7 @@ from core.implement.forms import SearchDateForm
 from core.utils.mainscript import mainscript
 import datetime
 
-
+import pandas as pd
 
 class MainPageView(View):
     template_name = 'implement/main.html'
@@ -29,11 +29,12 @@ class MainPageView(View):
             general_df, grow_df, drop_df = mainscript(start_date)
 
             context = {
-                'form': self.form,
+                'form': self.form(request.POST or None),
                 'dates': dates,
                 'general_df':general_df, 'grow_df':grow_df, 'drop_df':drop_df
             }
             return render(self.request, self.template_name, context)
+
         context = {
             'form': self.form(request.POST or None)
         }
@@ -48,9 +49,9 @@ class CurrDateTableView(View):
 
         general_df, grow_df, drop_df = mainscript(curr_date)
 
-        data = {
+        data = [{
             'general_df':general_df,
             'grow_df':grow_df,
             'drop_df':drop_df
-        }
-        return JsonResponse(data)
+        }]
+        return JsonResponse(data, safe = False)

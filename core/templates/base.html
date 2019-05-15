@@ -104,6 +104,7 @@ $(document).ready(function(){
             dataType: 'json',
             data: data,
             success: function(data){
+                $('.inner-nav-tabs').html('')
                 $.each(data, function(field){
                     $('.inner-nav-tabs').html(' \
                         <li class="nav-item"> \
@@ -119,13 +120,13 @@ $(document).ready(function(){
 
                     $('.inner-tab-panes').html(' \
                             <div id="table1" class="container tab-pane active"><br> \
-                              data[field]["general_df"] \
+                              '+data[field]["general_df"]+' \
                             </div> \
                             <div id="table2" class="container tab-pane fade"><br> \
-                              data[field]["grow_df"] \
+                              '+data[field]["grow_df"]+' \
                             </div> \
                             <div id="table3" class="container tab-pane fade"><br> \
-                              data[field]["drop_df"] \
+                              '+data[field]["drop_df"]+' \
                             </div> \
                     ')
                 })
