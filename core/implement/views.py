@@ -6,7 +6,6 @@ from core.implement.forms import SearchDateForm
 from core.utils.mainscript import mainscript
 import datetime
 
-import pandas as pd
 
 class MainPageView(View):
     template_name = 'implement/main.html'
@@ -26,7 +25,13 @@ class MainPageView(View):
             end_date = form.cleaned_data['end_date']
 
             dates= [start_date + datetime.timedelta(n) for n in range(int((end_date - start_date).days)+1)]
-            general_df, grow_df, drop_df = mainscript(start_date)
+
+            if self.request.user.is_authenticated:
+                general_df, grow_df, drop_df = mainscript(start_date, log=self.request.user.email, pas=self.request.user.pass_for_api)
+            else:
+                general_df, grow_df, drop_df = mainscript(start_date)
+
+            print(self.request.user.pass_for_api)
 
             context = {
                 'form': self.form(request.POST or None),
@@ -41,13 +46,19 @@ class MainPageView(View):
         return render(self.request, self.template_name, context)
 
 
+
+
 class CurrDateTableView(View):
     def get(self, request, *args, **kwargs):
         curr_date = self.request.GET.get('curr_date')
         curr_date = '-'.join([curr_date.split('-')[2], curr_date.split('-')[1], curr_date.split('-')[0]])
         curr_date = datetime.datetime.strptime(curr_date, '%Y-%m-%d').date()
 
-        general_df, grow_df, drop_df = mainscript(curr_date)
+        if self.request.user.is_authenticated:
+            general_df, grow_df, drop_df = mainscript(curr_date, log=self.request.user.email,
+                                                      pas=self.request.user.pass_for_api)
+        else:
+            general_df, grow_df, drop_df = mainscript(curr_date)
 
         data = [{
             'general_df':general_df,
