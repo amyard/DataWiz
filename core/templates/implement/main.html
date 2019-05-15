@@ -51,9 +51,9 @@
 				<ul class="nav nav-tabs">
 					{% for date in dates %}
 						{% if forloop.first %}
-							<li class ='mb-2 date-li'><a  href="#{{ forloop.counter }}" data-toggle="tab" class="active">{{ date|date:"m-d-Y" }}</a></li>
+							<li class ='mb-2 date-li'><a  href="#{{ forloop.counter }}" data-toggle="tab" class="active">{{ date|date:"d-m-Y" }}</a></li>
 						{% else %}
-							<li class ='mb-2 date-li'><a  href="#{{ forloop.counter }}" data-toggle="tab">{{ date|date:"m-d-Y" }}</a></li>
+							<li class ='mb-2 date-li'><a  href="#{{ forloop.counter }}" data-toggle="tab">{{ date|date:"d-m-Y" }}</a></li>
 						{% endif %}
 					{% endfor %}
 				</ul>

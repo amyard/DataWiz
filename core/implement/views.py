@@ -44,7 +44,7 @@ class MainPageView(View):
 class CurrDateTableView(View):
     def get(self, request, *args, **kwargs):
         curr_date = self.request.GET.get('curr_date')
-        curr_date = '-'.join([curr_date.split('-')[2], curr_date.split('-')[0], curr_date.split('-')[1]])
+        curr_date = '-'.join([curr_date.split('-')[2], curr_date.split('-')[1], curr_date.split('-')[0]])
         curr_date = datetime.datetime.strptime(curr_date, '%Y-%m-%d').date()
 
         general_df, grow_df, drop_df = mainscript(curr_date)
