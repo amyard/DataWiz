@@ -22,7 +22,7 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-light justify-content-between" style="background: #9FCDFF;">
-      <a class="navbar-brand" href="#">DataWiz TestCase</a>
+      <a class="navbar-brand" href="{% url 'base-view' %}">DataWiz TestCase</a>
 
       <div class="d-inline mr-5">
           {% if user.is_authenticated or user.is_active %}

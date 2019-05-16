@@ -1,7 +1,534 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07ed2088-58b4-4948-b985-a4a27b6b8a90" name="Default Changelist" comment="" />
+    <list default="true" id="07ed2088-58b4-4948-b985-a4a27b6b8a90" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/core/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/jquery.bootstrap.modal.forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/static/js/jquery.bootstrap.modal.forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/js/jquery.bootstrap.modal.forms.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/static/js/jquery.bootstrap.modal.forms.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/static/staticfiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/autocomplete.781713f30664.781713f30664.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/autocomplete.781713f30664.781713f30664.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/autocomplete.781713f30664.css.46e030870f94.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/autocomplete.css.46e030870f94.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/base.94893682937c.85167a69679c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/base.94893682937c.9f28a5d9422f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/base.94893682937c.9f28a5d9422f.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/base.94893682937c.ae33e6383baa.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/base.94893682937c.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/base.ae33e6383baa.85167a69679c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/base.ae33e6383baa.9f28a5d9422f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/base.ae33e6383baa.9f28a5d9422f.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/base.ae33e6383baa.ae33e6383baa.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/base.ae33e6383baa.css.0c0e1a75cc1c.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/base.css.1eb9d58da93e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/changelists.css.73b5b29560a1.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/changelists.f6dc691f8d62.css.73b5b29560a1.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/changelists.f6dc691f8d62.f6dc691f8d62.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/changelists.f6dc691f8d62.f6dc691f8d62.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/dashboard.7ac78187c567.7ac78187c567.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/dashboard.7ac78187c567.7ac78187c567.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/dashboard.7ac78187c567.css.7f6ea07b922d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/dashboard.css.7f6ea07b922d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/fonts.168bab448fee.168bab448fee.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/fonts.168bab448fee.436f3ded2098.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/fonts.168bab448fee.436f3ded2098.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/fonts.168bab448fee.css.a4e6b98b7b93.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/fonts.cc6140298ba7.168bab448fee.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/fonts.cc6140298ba7.436f3ded2098.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/fonts.cc6140298ba7.436f3ded2098.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/fonts.cc6140298ba7.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/fonts.css.239597777821.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.005170d00292.31b2f650d92e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.005170d00292.c16df65a39aa.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.005170d00292.c16df65a39aa.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.005170d00292.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.31b2f650d92e.31b2f650d92e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.31b2f650d92e.c16df65a39aa.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.31b2f650d92e.c16df65a39aa.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.31b2f650d92e.css.16ad3f00f760.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.8e9f67423063.005170d00292.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.8e9f67423063.0462e381642d.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.8e9f67423063.067b4455d0d8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.8e9f67423063.067b4455d0d8.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.8e9f67423063.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/forms.css.27e8efa14318.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/login.252ffabd6548.252ffabd6548.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/login.252ffabd6548.252ffabd6548.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/login.252ffabd6548.css.d38238f9f093.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/login.css.d38238f9f093.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/responsive.3a465780d49f.3a465780d49f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/responsive.3a465780d49f.3a465780d49f.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/responsive.3a465780d49f.css.76016b775171.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/responsive.css.76016b775171.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/responsive_rtl.51c7445ceeff.51c7445ceeff.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/responsive_rtl.51c7445ceeff.51c7445ceeff.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/responsive_rtl.51c7445ceeff.css.df339a2e047f.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/responsive_rtl.css.df339a2e047f.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/rtl.30f903442dc5.30f903442dc5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/rtl.30f903442dc5.30f903442dc5.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/rtl.30f903442dc5.css.533a07f08725.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/rtl.css.533a07f08725.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.7cf1de939f3b.7cf1de939f3b.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.7cf1de939f3b.7cf1de939f3b.md.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.7cf1de939f3b.md.d49a1bf04c1e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/vendor/select2/LICENSE-SELECT2.md.d49a1bf04c1e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/vendor/select2/select2.3805311d5fc1.3805311d5fc1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/vendor/select2/select2.3805311d5fc1.3805311d5fc1.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/vendor/select2/select2.3805311d5fc1.css.dc91952c489e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/vendor/select2/select2.css.dc91952c489e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/vendor/select2/select2.min.css.f37ff54c5969.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/vendor/select2/select2.min.d44571114a90.css.f37ff54c5969.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/vendor/select2/select2.min.d44571114a90.d44571114a90.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/vendor/select2/select2.min.d44571114a90.d44571114a90.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/widgets.5e372b41c483.31a450e7f729.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/widgets.5e372b41c483.31a450e7f729.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/widgets.5e372b41c483.5e372b41c483.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/widgets.5e372b41c483.css.e77b4c077145.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/widgets.a7251c097987.31a450e7f729.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/widgets.a7251c097987.31a450e7f729.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/widgets.a7251c097987.5e372b41c483.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/widgets.a7251c097987.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/css/widgets.css.a58e7182a9e9.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/fonts/LICENSE.d273d63619c9.d273d63619c9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/fonts/LICENSE.d273d63619c9.d273d63619c9.txt.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/fonts/LICENSE.d273d63619c9.txt.792763a187df.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/fonts/LICENSE.txt.792763a187df.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/fonts/README.ab99e6b541ea.ab99e6b541ea.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/fonts/README.ab99e6b541ea.ab99e6b541ea.txt.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/fonts/README.ab99e6b541ea.txt.d88a7cee05a2.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/fonts/README.txt.d88a7cee05a2.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/fonts/Roboto-Bold-webfont.50d75e48e0a3.50d75e48e0a3.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/fonts/Roboto-Light-webfont.c73eb1ceba33.c73eb1ceba33.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/fonts/Roboto-Regular-webfont.35b07eb2f871.35b07eb2f871.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/LICENSE.17e610f21b12.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/LICENSE.2c54f4e1ca1c.17e610f21b12.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/LICENSE.2c54f4e1ca1c.2c54f4e1ca1c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/LICENSE.2c54f4e1ca1c.2c54f4e1ca1c.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/README.a70711a38d87.a70711a38d87.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/README.a70711a38d87.a70711a38d87.txt.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/README.a70711a38d87.txt.b526ac7045de.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/README.txt.b526ac7045de.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/calendar-icons.39b290681a8b.39b290681a8b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/calendar-icons.39b290681a8b.39b290681a8b.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/calendar-icons.39b290681a8b.svg.51e16e2983ae.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/calendar-icons.svg.51e16e2983ae.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/gis/move_vertex_off.7a23bf31ef8a.7a23bf31ef8a.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/gis/move_vertex_off.7a23bf31ef8a.7a23bf31ef8a.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/gis/move_vertex_off.7a23bf31ef8a.svg.6b0e759254a6.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/gis/move_vertex_off.svg.6b0e759254a6.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/gis/move_vertex_on.0047eba25b67.0047eba25b67.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/gis/move_vertex_on.0047eba25b67.0047eba25b67.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/gis/move_vertex_on.0047eba25b67.svg.e15e5d253281.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/gis/move_vertex_on.svg.e15e5d253281.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-addlink.d519b3bab011.d519b3bab011.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-addlink.d519b3bab011.d519b3bab011.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-addlink.d519b3bab011.svg.64ba2492cd7c.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-addlink.svg.64ba2492cd7c.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-alert.034cc7d8a67f.034cc7d8a67f.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-alert.034cc7d8a67f.034cc7d8a67f.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-alert.034cc7d8a67f.svg.2d304301cbb0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-alert.svg.2d304301cbb0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-calendar.ac7aea671bea.ac7aea671bea.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-calendar.ac7aea671bea.ac7aea671bea.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-calendar.ac7aea671bea.svg.dd6790b7d6f5.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-calendar.svg.dd6790b7d6f5.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-changelink.18d2fd706348.18d2fd706348.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-changelink.18d2fd706348.18d2fd706348.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-changelink.18d2fd706348.svg.8eadef94e900.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-changelink.svg.8eadef94e900.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-clock.e1d4dfac3f2b.e1d4dfac3f2b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-clock.e1d4dfac3f2b.e1d4dfac3f2b.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-clock.e1d4dfac3f2b.svg.2724af0b8962.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-clock.svg.2724af0b8962.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-deletelink.564ef9dc3854.564ef9dc3854.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-deletelink.564ef9dc3854.564ef9dc3854.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-deletelink.564ef9dc3854.svg.c71be4fbc7b4.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-deletelink.svg.c71be4fbc7b4.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-no.439e821418cd.439e821418cd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-no.439e821418cd.439e821418cd.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-no.439e821418cd.svg.288e5887496b.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-no.svg.288e5887496b.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-unknown-alt.81536e128bb6.81536e128bb6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-unknown-alt.81536e128bb6.81536e128bb6.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-unknown-alt.81536e128bb6.svg.1a84f0646bdd.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-unknown-alt.svg.1a84f0646bdd.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-unknown.a18cb4398978.a18cb4398978.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-unknown.a18cb4398978.a18cb4398978.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-unknown.a18cb4398978.svg.aec6bca0da8c.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-unknown.svg.aec6bca0da8c.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-viewlink.41eb31f7826e.41eb31f7826e.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-viewlink.41eb31f7826e.41eb31f7826e.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-viewlink.41eb31f7826e.svg.54bbc74824f8.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-viewlink.svg.54bbc74824f8.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-yes.d2f9f035226a.d2f9f035226a.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-yes.d2f9f035226a.d2f9f035226a.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-yes.d2f9f035226a.svg.8e56b5b63f44.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/icon-yes.svg.8e56b5b63f44.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/inline-delete.fec1b761f254.fec1b761f254.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/inline-delete.fec1b761f254.fec1b761f254.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/inline-delete.fec1b761f254.svg.26353e4b052e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/inline-delete.svg.26353e4b052e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/search.7cf54ff789c6.7cf54ff789c6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/search.7cf54ff789c6.7cf54ff789c6.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/search.7cf54ff789c6.svg.aa41ce9d65d0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/search.svg.aa41ce9d65d0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/selector-icons.b4555096cea2.b4555096cea2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/selector-icons.b4555096cea2.b4555096cea2.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/selector-icons.b4555096cea2.svg.1810d04beb36.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/selector-icons.svg.1810d04beb36.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/sorting-icons.3a097b59f104.3a097b59f104.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/sorting-icons.3a097b59f104.3a097b59f104.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/sorting-icons.3a097b59f104.svg.e37b32a9f15b.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/sorting-icons.svg.e37b32a9f15b.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/tooltag-add.e59d620a9742.e59d620a9742.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/tooltag-add.e59d620a9742.e59d620a9742.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/tooltag-add.e59d620a9742.svg.a865626abc18.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/tooltag-add.svg.a865626abc18.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/tooltag-arrowright.bbfb788a849e.bbfb788a849e.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/tooltag-arrowright.bbfb788a849e.bbfb788a849e.svg.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/tooltag-arrowright.bbfb788a849e.svg.7d0855d0ffa0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/img/tooltag-arrowright.svg.7d0855d0ffa0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/SelectBox.b49f008d186b.b49f008d186b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/SelectBox.b49f008d186b.b49f008d186b.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/SelectBox.b49f008d186b.js.d0912d8e3a75.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/SelectBox.js.d0912d8e3a75.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/SelectFilter2.32ea9335ce47.32ea9335ce47.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/SelectFilter2.32ea9335ce47.32ea9335ce47.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/SelectFilter2.32ea9335ce47.js.09ecccc1580d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/SelectFilter2.js.09ecccc1580d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/actions.2fb8e8349c22.2fb8e8349c22.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/actions.2fb8e8349c22.2fb8e8349c22.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/actions.2fb8e8349c22.js.73bac11fd2a1.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/actions.js.73bac11fd2a1.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/actions.min.5fa8cb0403f1.5fa8cb0403f1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/actions.min.5fa8cb0403f1.5fa8cb0403f1.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/actions.min.5fa8cb0403f1.js.15aca3876203.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/actions.min.js.15aca3876203.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/admin/DateTimeShortcuts.c085703ffd82.c085703ffd82.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/admin/DateTimeShortcuts.c085703ffd82.c085703ffd82.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/admin/DateTimeShortcuts.c085703ffd82.js.7a67a66c2901.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/admin/DateTimeShortcuts.js.7a67a66c2901.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/admin/RelatedObjectLookups.ea0683bea064.ea0683bea064.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/admin/RelatedObjectLookups.ea0683bea064.ea0683bea064.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/admin/RelatedObjectLookups.ea0683bea064.js.7c17284faed5.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/admin/RelatedObjectLookups.js.7c17284faed5.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/autocomplete.cfd2c4dc8981.cfd2c4dc8981.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/autocomplete.cfd2c4dc8981.cfd2c4dc8981.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/autocomplete.cfd2c4dc8981.js.19777f834fd7.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/autocomplete.js.19777f834fd7.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/calendar.aae57adab5f6.aae57adab5f6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/calendar.aae57adab5f6.aae57adab5f6.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/calendar.aae57adab5f6.js.889747c0c9d3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/calendar.js.889747c0c9d3.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/cancel.d6b4b556c3aa.d6b4b556c3aa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/cancel.d6b4b556c3aa.d6b4b556c3aa.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/cancel.d6b4b556c3aa.js.37ea9dc993f7.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/cancel.js.37ea9dc993f7.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/change_form.9e85003a1a38.9e85003a1a38.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/change_form.9e85003a1a38.9e85003a1a38.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/change_form.9e85003a1a38.js.bb37c219f34a.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/change_form.js.bb37c219f34a.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/collapse.1007b1686bfd.1007b1686bfd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/collapse.1007b1686bfd.1007b1686bfd.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/collapse.1007b1686bfd.js.db19cc1093ae.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/collapse.js.db19cc1093ae.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/collapse.min.d4e905d48000.d4e905d48000.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/collapse.min.d4e905d48000.d4e905d48000.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/collapse.min.d4e905d48000.js.1c62a19a2102.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/collapse.min.js.1c62a19a2102.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/core.9c3bce7d1006.9c3bce7d1006.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/core.9c3bce7d1006.9c3bce7d1006.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/core.9c3bce7d1006.js.4643c24737ae.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/core.js.4643c24737ae.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/inlines.3b3fb199b064.3b3fb199b064.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/inlines.3b3fb199b064.3b3fb199b064.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/inlines.3b3fb199b064.js.a06147933523.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/inlines.js.a06147933523.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/inlines.min.4d23f8660b21.4d23f8660b21.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/inlines.min.4d23f8660b21.4d23f8660b21.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/inlines.min.4d23f8660b21.js.bb244ca01157.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/inlines.min.js.bb244ca01157.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/jquery.init.95b62fa19378.95b62fa19378.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/jquery.init.95b62fa19378.95b62fa19378.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/jquery.init.95b62fa19378.js.bf32d5d5691b.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/jquery.init.js.bf32d5d5691b.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/popup_response.6ce3197f8fc8.6ce3197f8fc8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/popup_response.6ce3197f8fc8.6ce3197f8fc8.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/popup_response.6ce3197f8fc8.js.226b6b2b77dd.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/popup_response.js.226b6b2b77dd.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/prepopulate.2f90da7170ec.2f90da7170ec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/prepopulate.2f90da7170ec.2f90da7170ec.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/prepopulate.2f90da7170ec.js.06408c0cc6d0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/prepopulate.js.06408c0cc6d0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/prepopulate.min.85fd5e0fb706.85fd5e0fb706.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/prepopulate.min.85fd5e0fb706.85fd5e0fb706.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/prepopulate.min.85fd5e0fb706.js.3a6cf249c785.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/prepopulate.min.js.3a6cf249c785.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/prepopulate_init.0d3b53c37074.0d3b53c37074.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/prepopulate_init.0d3b53c37074.0d3b53c37074.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/prepopulate_init.0d3b53c37074.js.dc43a583964e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/prepopulate_init.js.dc43a583964e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/timeparse.51258861a46a.51258861a46a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/timeparse.51258861a46a.51258861a46a.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/timeparse.51258861a46a.js.c17c635ef658.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/timeparse.js.c17c635ef658.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/urlify.4087f3e18796.4087f3e18796.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/urlify.4087f3e18796.4087f3e18796.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/urlify.4087f3e18796.js.08e649dde283.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/urlify.js.08e649dde283.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/jquery/LICENSE.a158210a2737.a158210a2737.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/jquery/LICENSE.a158210a2737.a158210a2737.txt.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/jquery/LICENSE.a158210a2737.txt.55b940ce4bc0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/jquery/LICENSE.txt.55b940ce4bc0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/jquery/jquery.6a07da9fae93.6a07da9fae93.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/jquery/jquery.6a07da9fae93.6a07da9fae93.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/jquery/jquery.6a07da9fae93.js.5ee482ba82c5.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/jquery/jquery.js.5ee482ba82c5.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/jquery/jquery.min.a09e13ee94d5.a09e13ee94d5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/jquery/jquery.min.a09e13ee94d5.a09e13ee94d5.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/jquery/jquery.min.a09e13ee94d5.js.b793ba514317.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/jquery/jquery.min.js.b793ba514317.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/LICENSE.7cf1de939f3b.7cf1de939f3b.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/LICENSE.7cf1de939f3b.7cf1de939f3b.md.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/LICENSE.7cf1de939f3b.md.d49a1bf04c1e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/LICENSE.md.d49a1bf04c1e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ar.a8bb27ec698c.a8bb27ec698c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ar.a8bb27ec698c.a8bb27ec698c.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ar.a8bb27ec698c.js.7bb9a9f44b6a.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ar.js.7bb9a9f44b6a.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/az.498dc667b34e.498dc667b34e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/az.498dc667b34e.498dc667b34e.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/az.498dc667b34e.js.38a36282fb89.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/az.js.38a36282fb89.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/bg.89cba4df3c86.89cba4df3c86.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/bg.89cba4df3c86.89cba4df3c86.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/bg.89cba4df3c86.js.fc7f483ca370.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/bg.js.fc7f483ca370.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ca.2eaad4eb1950.2eaad4eb1950.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ca.2eaad4eb1950.2eaad4eb1950.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ca.2eaad4eb1950.js.c662ff25e559.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ca.js.c662ff25e559.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/cs.a68bcd293adc.a68bcd293adc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/cs.a68bcd293adc.a68bcd293adc.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/cs.a68bcd293adc.js.841b284991b2.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/cs.js.841b284991b2.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/da.cbf897a0ae53.cbf897a0ae53.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/da.cbf897a0ae53.cbf897a0ae53.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/da.cbf897a0ae53.js.4d47403cbf1c.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/da.js.4d47403cbf1c.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/de.366d0aacb55f.366d0aacb55f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/de.366d0aacb55f.366d0aacb55f.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/de.366d0aacb55f.js.77fff40ab261.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/de.js.77fff40ab261.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/el.5629ce65500f.5629ce65500f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/el.5629ce65500f.5629ce65500f.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/el.5629ce65500f.js.d729175c0b3a.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/el.js.d729175c0b3a.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/en.05649b26c086.05649b26c086.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/en.05649b26c086.05649b26c086.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/en.05649b26c086.js.9dca758cdca1.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/en.js.9dca758cdca1.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/es.dc9dbf9d65df.dc9dbf9d65df.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/es.dc9dbf9d65df.dc9dbf9d65df.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/es.dc9dbf9d65df.js.5489a21cdf14.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/es.js.5489a21cdf14.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/et.c3953fb90b6b.c3953fb90b6b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/et.c3953fb90b6b.c3953fb90b6b.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/et.c3953fb90b6b.js.79bf3f2f6c15.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/et.js.79bf3f2f6c15.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/eu.11b925456433.11b925456433.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/eu.11b925456433.11b925456433.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/eu.11b925456433.js.3b82fd040f7d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/eu.js.3b82fd040f7d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/fa.98e52839b583.98e52839b583.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/fa.98e52839b583.98e52839b583.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/fa.98e52839b583.js.fd2fb880ec1d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/fa.js.fd2fb880ec1d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/fi.659847deefdc.659847deefdc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/fi.659847deefdc.659847deefdc.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/fi.659847deefdc.js.b49e718cc150.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/fi.js.b49e718cc150.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/fr.b06a3340de45.b06a3340de45.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/fr.b06a3340de45.b06a3340de45.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/fr.b06a3340de45.js.071da6e7ce99.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/fr.js.071da6e7ce99.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/gl.78a87f7c0a51.78a87f7c0a51.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/gl.78a87f7c0a51.78a87f7c0a51.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/gl.78a87f7c0a51.js.be259cbe2372.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/gl.js.be259cbe2372.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/he.222d90ee0344.222d90ee0344.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/he.222d90ee0344.222d90ee0344.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/he.222d90ee0344.js.56f0dbd8af2e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/he.js.56f0dbd8af2e.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/hi.116a90b7111b.116a90b7111b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/hi.116a90b7111b.116a90b7111b.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/hi.116a90b7111b.js.ea74fcdd7908.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/hi.js.ea74fcdd7908.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/hr.e1d2c70b4df5.e1d2c70b4df5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/hr.e1d2c70b4df5.e1d2c70b4df5.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/hr.e1d2c70b4df5.js.877ca9f38a47.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/hr.js.877ca9f38a47.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/hu.db45641f10b2.db45641f10b2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/hu.db45641f10b2.db45641f10b2.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/hu.db45641f10b2.js.ec5fdc26281a.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/hu.js.ec5fdc26281a.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/id.6ee6c9c64b94.6ee6c9c64b94.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/id.6ee6c9c64b94.6ee6c9c64b94.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/id.6ee6c9c64b94.js.952e80e8a038.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/id.js.952e80e8a038.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/is.808c7d47acb5.808c7d47acb5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/is.808c7d47acb5.808c7d47acb5.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/is.808c7d47acb5.js.1d87f395ae36.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/is.js.1d87f395ae36.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/it.bae1661dbb77.bae1661dbb77.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/it.bae1661dbb77.bae1661dbb77.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/it.bae1661dbb77.js.629dc47e90cf.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/it.js.629dc47e90cf.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ja.19cf1ce8a03d.19cf1ce8a03d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ja.19cf1ce8a03d.19cf1ce8a03d.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ja.19cf1ce8a03d.js.c6ff33d785d4.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ja.js.c6ff33d785d4.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/km.6074a9c5575c.6074a9c5575c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/km.6074a9c5575c.6074a9c5575c.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/km.6074a9c5575c.js.eb3ade487c02.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/km.js.eb3ade487c02.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ko.74b17541834f.74b17541834f.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ko.74b17541834f.74b17541834f.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ko.74b17541834f.js.43c9d954d98f.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ko.js.43c9d954d98f.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/lt.a0783b1bd159.a0783b1bd159.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/lt.a0783b1bd159.a0783b1bd159.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/lt.a0783b1bd159.js.c2fb262817d2.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/lt.js.c2fb262817d2.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/lv.07fe2a580d17.07fe2a580d17.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/lv.07fe2a580d17.07fe2a580d17.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/lv.07fe2a580d17.js.1dc63226d8b4.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/lv.js.1dc63226d8b4.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/mk.4986d7fc3ff3.4986d7fc3ff3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/mk.4986d7fc3ff3.4986d7fc3ff3.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/mk.4986d7fc3ff3.js.7881fc60cefd.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/mk.js.7881fc60cefd.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ms.23e7b4369579.23e7b4369579.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ms.23e7b4369579.23e7b4369579.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ms.23e7b4369579.js.2ed787cd2a72.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ms.js.2ed787cd2a72.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/nb.137e184004aa.137e184004aa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/nb.137e184004aa.137e184004aa.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/nb.137e184004aa.js.feb70b77fa7d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/nb.js.feb70b77fa7d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/nl.c363ace8aa05.c363ace8aa05.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/nl.c363ace8aa05.c363ace8aa05.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/nl.c363ace8aa05.js.1104f74d5d5b.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/nl.js.1104f74d5d5b.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/pl.76465b54a6b0.76465b54a6b0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/pl.76465b54a6b0.76465b54a6b0.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/pl.76465b54a6b0.js.82d4add59f00.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/pl.js.82d4add59f00.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/pt-BR.9efbbac4fda8.9efbbac4fda8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/pt-BR.9efbbac4fda8.9efbbac4fda8.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/pt-BR.9efbbac4fda8.js.a2c039ce2942.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/pt-BR.js.a2c039ce2942.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/pt.5d6ccc53b347.5d6ccc53b347.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/pt.5d6ccc53b347.5d6ccc53b347.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/pt.5d6ccc53b347.js.b248a9b334ce.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/pt.js.b248a9b334ce.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ro.1ddc2b9980dc.1ddc2b9980dc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ro.1ddc2b9980dc.1ddc2b9980dc.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ro.1ddc2b9980dc.js.c8764411de07.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ro.js.c8764411de07.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ru.d83609abf2e0.d83609abf2e0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ru.d83609abf2e0.d83609abf2e0.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ru.d83609abf2e0.js.fb8a6fa0d018.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/ru.js.fb8a6fa0d018.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sk.a0f1a818d092.a0f1a818d092.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sk.a0f1a818d092.a0f1a818d092.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sk.a0f1a818d092.js.fbadea397808.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sk.js.fbadea397808.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.2f3047aad49e.2f3047aad49e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.2f3047aad49e.2f3047aad49e.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.2f3047aad49e.js.9d3cb24575f8.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sr-Cyrl.js.9d3cb24575f8.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sr.157bc6eb978e.157bc6eb978e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sr.157bc6eb978e.157bc6eb978e.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sr.157bc6eb978e.js.0cd64975ef1d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sr.js.0cd64975ef1d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sv.2b21bb3f6110.2b21bb3f6110.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sv.2b21bb3f6110.2b21bb3f6110.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sv.2b21bb3f6110.js.4cdb7dff59b2.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/sv.js.4cdb7dff59b2.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/th.2a4ece4c4355.2a4ece4c4355.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/th.2a4ece4c4355.2a4ece4c4355.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/th.2a4ece4c4355.js.9e5055da5dd5.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/th.js.9e5055da5dd5.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/tr.c1925d8817db.c1925d8817db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/tr.c1925d8817db.c1925d8817db.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/tr.c1925d8817db.js.f8f0c328bdec.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/tr.js.f8f0c328bdec.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/uk.3d56f311192d.3d56f311192d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/uk.3d56f311192d.3d56f311192d.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/uk.3d56f311192d.js.eb2d74a5109f.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/uk.js.eb2d74a5109f.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/vi.3520aa7bdea8.3520aa7bdea8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/vi.3520aa7bdea8.3520aa7bdea8.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/vi.3520aa7bdea8.js.83c5e5a23467.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/vi.js.83c5e5a23467.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/zh-CN.419002d3c6c1.419002d3c6c1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/zh-CN.419002d3c6c1.419002d3c6c1.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/zh-CN.419002d3c6c1.js.1ccb2d592548.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/zh-CN.js.1ccb2d592548.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/zh-TW.c021537edf2c.c021537edf2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/zh-TW.c021537edf2c.c021537edf2c.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/zh-TW.c021537edf2c.js.5d0ac15d5efb.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/i18n/zh-TW.js.5d0ac15d5efb.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/select2.full.a95323cb4760.a95323cb4760.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/select2.full.a95323cb4760.a95323cb4760.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/select2.full.a95323cb4760.js.8bbe85f581fd.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/select2.full.js.8bbe85f581fd.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/select2.full.min.da607360bcc6.da607360bcc6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/select2.full.min.da607360bcc6.da607360bcc6.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/select2.full.min.da607360bcc6.js.eb0ed4e75629.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/select2/select2.full.min.js.eb0ed4e75629.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/xregexp/LICENSE.d64cecf4f157.d64cecf4f157.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/xregexp/LICENSE.d64cecf4f157.d64cecf4f157.txt.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/xregexp/LICENSE.d64cecf4f157.txt.a43f81061382.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/xregexp/LICENSE.txt.a43f81061382.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/xregexp/xregexp.1865b1cf5085.1865b1cf5085.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/xregexp/xregexp.1865b1cf5085.1865b1cf5085.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/xregexp/xregexp.1865b1cf5085.js.65903b75db8d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/xregexp/xregexp.js.65903b75db8d.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/xregexp/xregexp.min.c95393b8ca4d.c95393b8ca4d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/xregexp/xregexp.min.c95393b8ca4d.c95393b8ca4d.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/xregexp/xregexp.min.c95393b8ca4d.js.5af6f3012e7b.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/admin/js/vendor/xregexp/xregexp.min.js.5af6f3012e7b.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/css/main.33171e7fc6d7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/css/main.33171e7fc6d7.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/core/staticfiles/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/css/main.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/bootstrap.min.79050434eaba.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/bootstrap.min.79050434eaba.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/bootstrap.min.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/jquery-3.2.1.min.c9f5aeeca3ad.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/jquery-3.2.1.min.c9f5aeeca3ad.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/jquery-3.2.1.min.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/jquery.bootstrap.modal.forms.dc6a83b7e22b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/jquery.bootstrap.modal.forms.dc6a83b7e22b.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/jquery.bootstrap.modal.forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/staticfiles/js/jquery.bootstrap.modal.forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/jquery.bootstrap.modal.forms.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/core/staticfiles/js/jquery.bootstrap.modal.forms.js.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/jquery.bootstrap.modal.forms.min.d7eb8f2850fc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/jquery.bootstrap.modal.forms.min.d7eb8f2850fc.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/jquery.bootstrap.modal.forms.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/core/staticfiles/js/jquery.bootstrap.modal.forms.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/jquery.bootstrap.modal.forms.min.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/core/staticfiles/js/jquery.bootstrap.modal.forms.min.js.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/popper.min.6b08ddc90100.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/popper.min.6b08ddc90100.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/js/popper.min.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/staticfiles.50e1afa96882.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/staticfiles.50e1afa96882.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/staticfiles/staticfiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/staticfiles/staticfiles.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/core/templates/base.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,46 +537,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="180" column="40" lean-forward="true" selection-start-line="180" selection-start-column="40" selection-end-line="180" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/users/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="63" column="76" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/users/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="420">
               <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+              <folding>
+                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,16 +598,16 @@
         <option value="$PROJECT_DIR$/core/utils/utils.py" />
         <option value="$PROJECT_DIR$/core/implement/models.py" />
         <option value="$PROJECT_DIR$/core/implement/admin.py" />
-        <option value="$PROJECT_DIR$/core/templates/base.html" />
         <option value="$PROJECT_DIR$/core/templates/implement/main.html" />
-        <option value="$PROJECT_DIR$/core/staticfiles/css/main.css" />
         <option value="$PROJECT_DIR$/core/utils/copyscript.py" />
         <option value="$PROJECT_DIR$/core/utils/mainscript.py" />
         <option value="$PROJECT_DIR$/core/implement/views.py" />
         <option value="$PROJECT_DIR$/core/users/models.py" />
         <option value="$PROJECT_DIR$/core/users/forms.py" />
         <option value="$PROJECT_DIR$/core/users/custom_validators.py" />
+        <option value="$PROJECT_DIR$/core/staticfiles/css/main.css" />
         <option value="$PROJECT_DIR$/config/settings.py" />
+        <option value="$PROJECT_DIR$/core/templates/base.html" />
       </list>
     </option>
   </component>
@@ -116,7 +622,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,23 +632,19 @@
             <path>
               <item name="Datawiz" type="b2602c69:ProjectViewProjectNode" />
               <item name="Datawiz" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Datawiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Datawiz" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Datawiz" type="b2602c69:ProjectViewProjectNode" />
               <item name="Datawiz" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,8 +679,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24918033" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24918033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -190,7 +692,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.29589632" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.29589632" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -268,23 +770,6 @@
     <entry file="file://$PROJECT_DIR$/core/utils/utils.py" />
     <entry file="file://$PROJECT_DIR$/core/implement/models.py" />
     <entry file="file://$PROJECT_DIR$/core/implement/admin.py" />
-    <entry file="file://$PROJECT_DIR$/core/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="128" column="56" selection-start-line="128" selection-start-column="56" selection-end-line="128" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/staticfiles/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/templates/implement/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -326,12 +811,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/users/views.py">
+    <entry file="file://$PROJECT_DIR$/core/users/custom_validators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="60">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/staticfiles/css/main.33171e7fc6d7.css" />
+    <entry file="file://$PROJECT_DIR$/core/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="154" column="44" selection-start-line="154" selection-start-column="44" selection-end-line="154" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/staticfiles/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/users/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="63" column="76" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -346,30 +859,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/users/custom_validators.py">
+    <entry file="file://$PROJECT_DIR$/core/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="e#0#74#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/users/forms.py">
+    <entry file="file://$PROJECT_DIR$/core/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="63" column="76" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
+        <state relative-caret-position="360">
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="180" column="40" lean-forward="true" selection-start-line="180" selection-start-column="40" selection-end-line="180" selection-end-column="40" />
         </state>
       </provider>
     </entry>

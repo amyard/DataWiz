@@ -2,17 +2,15 @@ body {
     color: #343A40;
 }
 
-/*
-.navbar-brand {
-    color: #343A40;
+hr {
+    background: #9FCDFF;
 }
-*/
 
-.icons-a {
+.icons-a, .icons-b {
     color: #343A40;
     background-color: white;
-    padding: 5px 15px;
     border-radius: 5px;
+    padding: 5px 15px;
 }
 
 .icons-a:hover {
@@ -20,4 +18,93 @@ body {
     color: white;
     background-color: #343A40;
     box-shadow: 0px 0px 7px white;
+}
+
+
+.login-page {
+    margin-left: 30%;
+    width: 32%;
+    margin-top: 5%;
+    padding: 0px 30px 10px 30px;
+    border: 1px solid #9FCDFF;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px #343A40;
+}
+
+
+/*  BUTTONS  HEADER  */
+.login-btn, .signup-btn {
+    color: #343A40;
+    background-color: white;
+    border-radius: 5px;
+    border-color: white;
+    padding: 2px 15px;
+}
+
+.login-btn:hover, .signup-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #343A40;
+    box-shadow: 0px 0px 7px white;
+}
+
+
+/*   SIDEBAR   */
+.left-sidebar {
+    width: 17%;
+    float: left;
+}
+
+.left-sidebar > form, .right-sidebar {
+    padding: 10px 20px;
+}
+
+.right-sidebar {
+    width: 75%;
+    float: right;
+}
+
+.left-sidebar, .right-sidebar {
+    border-radius: 10px;
+    border: 1px solid #0069D9;
+    box-shadow: 0px 0px 5px #343A40;
+}
+
+
+/*   CONTENT    */
+
+#exTab2 .nav-tabs > li {
+    padding-right: 1%;
+    font-size: 1.1em;
+}
+
+body .nav-tabs .active {
+    color: #343A40;
+    font-weight: bold;
+    background-color: #9FCDFF;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+#exTab2 .nav-tabs li a:hover {
+    text-decoration: none;
+}
+
+
+/*   TABLES   */
+
+body .df-tables thead {
+    background: #9FCDFF;
+}
+
+body .df-tables thead tr th {
+    text-align: center;
+}
+
+body .df-tables tbody tr:hover {
+    background: #9FCDFF;
+}
+
+tr:nth-child(2n) {
+    background: #e8edff;
 }
