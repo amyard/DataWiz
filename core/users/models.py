@@ -3,9 +3,6 @@ from django.core.validators import RegexValidator
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
 
 
-USERNAME_REGEX = '^[a-zA-Z0-9.+-]*$'
-
-
 class UserManager(BaseUserManager):
 	def create_user(self, username, email, password=None):
 		if not email:
@@ -26,13 +23,7 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser):
-	username = models.CharField(max_length=300, validators = [
-                            RegexValidator(regex = USERNAME_REGEX,
-										message='Логин должен состоять из букв и числе',
-										code='invalid_username'
-							)],
-					unique=True
-				)
+	username = models.CharField(max_length=75, unique=True)
 	email = models.EmailField(max_length=255, unique=True)
 	pass_for_api = models.CharField(max_length=255, blank=True)
 

@@ -60,8 +60,8 @@ class CustomUserCreationForm(PopRequestMixin, CreateUpdateAjaxMixin, UserCreatio
         password2 = self.cleaned_data.get('password2')
         if password1 != password2:
             raise forms.ValidationError('Ваши пароли не совпадают.')
-        if len(password2) < 8:
-            raise forms.ValidationError('Пароль должен быть не менее 8 симовлов')
+        if len(password2) < 4:
+            raise forms.ValidationError('Пароль должен быть не менее 4 символов')
         return password2
 
 
@@ -79,13 +79,3 @@ class CustomUserCreationForm(PopRequestMixin, CreateUpdateAjaxMixin, UserCreatio
         except:
             raise forms.ValidationError('Incorrect email.')
         return email
-
-
-    # def save(self, commit=True):
-    #     # Save the provided password in hashed format
-    #     user = super(CustomUserCreationForm, self).save(commit=False)
-    #     user.set_password(self.cleaned_data["password1"])
-    #     user.pass_for_api = self.cleaned_data["password1"]
-    #     if commit:
-    #         user.save()
-    #     return user
